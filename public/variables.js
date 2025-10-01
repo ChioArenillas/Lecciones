@@ -38,10 +38,20 @@ class Persona{
 console.log(typeof Persona);
 
 //tipo undefined
-var x;
-console.log(x);
+var w;
+console.log(w);
 
 //null = ausencia de valor (es una var de tipo object)
-var y = null;
-console.log(y);
-console.log(typeof y);
+var v = null;
+console.log(v);
+console.log(typeof v);
+
+//var (ya no se usa para llamar variables, se usa let o const)
+//let es para variables que se pueden modificar
+//const es para variables que no admiten cambios
+
+let x, y;
+x = 10, y = 20;
+let z = x + y;
+console.log(z);
+
