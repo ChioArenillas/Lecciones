@@ -1,57 +1,72 @@
-// tipo de dato string
-var nombre = "chio";
-console.log(nombre);
 
-// dato number
-var number = 1000
-console.log(number);
+/*  
+TIPOS DE DATOS:
+   STRING 
+   NUMBER
+   OBJECT
+   BOOLEAN
+   FUNCTION
+   SYMBOL
+   CLASS
+   UNDEFINED
+   NULL
+*/
 
-//dato object
-var object = {
-    nombre : "chio",
-    apellido : "alvarez",
-    telefono : "858903"
-} 
-console.log(object);
-console.log(typeof object)
+/* 
+VAR (ya no se usa para llamar variables, se usa let o const)
+LET es para variables que se pueden modificar
+CONST es para variables que no admiten cambios 
+*/
 
-//dato boolean (T, F)
-var bandera = true;
-console.log(bandera);
-console.log(typeof bandera);
+    let x, y;
+    x = 10, y = 20;
+    let z = x + y;
+    console.log(z);
 
-//dato function
-function myFunction(){}
-console.log(myFunction);
+// STRING
+    var nombre = "chio";
+    console.log(nombre);
 
-//dato symbol
-var simbolo = Symbol("mi simbolo");
-console.log(simbolo);
+// NUMBER
+    var number = 1000
+    console.log(number);
 
-//Tipo clase es una function
-class Persona{
-    constructor(nombre, apellido){
-        this.nombre = nombre;
-        this.apellido = apellido;
+// OBJECT
+    var object = {
+        nombre : "chio",
+        apellido : "alvarez",
+        telefono : "858903"
+    } 
+    console.log(object);
+    console.log(typeof object)
+
+// BOOLEAN (T, F)
+    var bandera = true;
+    console.log(bandera);
+    console.log(typeof bandera);
+
+// FUNCTION
+    function myFunction(){}
+    console.log(myFunction);
+
+// SYMBOL 
+    var simbolo = Symbol("mi simbolo");
+    console.log(simbolo);
+
+// CLASS es una function
+    class Persona{
+        constructor(nombre, apellido){
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
     }
-}
-console.log(typeof Persona);
+    console.log(typeof Persona);
 
-//tipo undefined
-var w;
-console.log(w);
+//UNDEFINED 
+    var w;
+    console.log(w);
 
-//null = ausencia de valor (es una var de tipo object)
-var v = null;
-console.log(v);
-console.log(typeof v);
-
-//var (ya no se usa para llamar variables, se usa let o const)
-//let es para variables que se pueden modificar
-//const es para variables que no admiten cambios
-
-let x, y;
-x = 10, y = 20;
-let z = x + y;
-console.log(z);
-
+//NULL = ausencia de valor (es una var de tipo object)
+    var v = null;
+    console.log(v);
+    console.log(typeof v);
