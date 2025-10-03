@@ -15,70 +15,70 @@ FUNCIONES O MÉTODOS
     PASO POR REFERENCIA
 */
 
-    /* *HOSTING: este concepto hace referencia a que la función puede estar descrita en cualquier parte del archivo,
+    /* *HOISTING: este concepto hace referencia a que la función puede estar descrita en cualquier parte del archivo,
     que siempre que se la llame a la función se ejecutará aunque no esté justo después de la declaración. */
         miFuncion(4, 5);
 
 
 //FUNCIONES O MÉTODOS
         //Declaración de la función
-        function miFuncion(a, b){
-            return a + b;
-        }
+            function miFuncion(a, b){
+                return a + b;
+            }
 
         //Llamada a la función
-        let resultado = miFuncion(2, 3);
-        console.log(resultado);
+            let resultado = miFuncion(2, 3);
+            console.log(resultado);
 
     //EXPRESION FUNCTION
-    let sumar = function (a, b) {return a + b};
+        let sumar = function (a, b) {return a + b};
 
-    resultado = sumar(1,2);
-    console.log(resultado);
+        resultado = sumar(1,2);
+        console.log(resultado);
 
     //SELF INVOKING FUNCTION (este tipo se ejecutan una sola vez)
-    (function (a, b){
-        console.log("Ejecutando la función:" + (a + b));
-    })(3, 4);
+        (function (a, b){
+            console.log("Ejecutando la función:" + (a + b));
+        })(3, 4);
 
-        //Función como OBJETO (las funciones pueden ser descritas como Objeto)
-            console.log(typeof miFuncion); //Función como valor Function
+            //Función como OBJETO (las funciones pueden ser descritas como Objeto)
+                console.log(typeof miFuncion); //Función como valor Function
 
-            //como cambiarla a objeto:
-            var miFuncionTexto = miFuncion.toString();
-            console.log(miFuncionTexto);
+                //como cambiarla a objeto:
+                var miFuncionTexto = miFuncion.toString();
+                console.log(miFuncionTexto);
 
     //FUNCTION ARROW es igual que la de Expresión pero se escribe de otra forma
-    const sumarFuncionTipoArrow = (a, b) => a + b;
-    resultado = sumarFuncionTipoArrow(3, 5);
-    console.log(resultado);
+        const sumarFuncionTipoArrow = (a, b) => a + b;
+        resultado = sumarFuncionTipoArrow(3, 5);
+        console.log(resultado);
 
         //PARÁMETROS Y ARGUMENTOS
         //PARÁMETROS: elementos que le damos a la función (ej: a, b)
         //ARGUMENTOS: valores que le damos a esos parámetros (ej: 3, 5)(los valores que le designas a esos "a, b")
 
-        sumar = function (a, b){ //estos son los parámetros
-            console.log(arguments[0]);
-            console.log(arguments[1]);
-            return a + b
-        };
+            sumar = function (a, b){ //estos son los parámetros
+                console.log(arguments[0]);
+                console.log(arguments[1]);
+                return a + b
+            };
 
-        resultado = sumar(3, 2); //estos los argumentos
-        console.log(resultado);
+            resultado = sumar(3, 2); //estos los argumentos
+            console.log(resultado);
 
 
-        //EJEMPLO: SUMA TODOS LOS ARGUMENTOS
+            //EJEMPLO: SUMA TODOS LOS ARGUMENTOS
 
-        let resultadoB = sumarTodo(5, 4, 13, 10, 9);
-        console.log(resultadoB);
+                let resultadoB = sumarTodo(5, 4, 13, 10, 9);
+                console.log(resultadoB);
 
-        function sumarTodo(){
-            let suma = 0;
-            for(let i = 0; i < arguments.length; i++){
-                suma += arguments[i]; // suma = suma + arguments[i]
-            }
-            return suma;
-        }
+                function sumarTodo(){
+                    let suma = 0;
+                    for(let i = 0; i < arguments.length; i++){
+                        suma += arguments[i]; // suma = suma + arguments[i]
+                    }
+                    return suma;
+                }
 
         //PASO POR VALOR
         
