@@ -1,7 +1,18 @@
 /*
 FUNCIONES O MÉTODOS
+    DECLARACIÓN DE LA FUNCIÓN
+    LLAMADA A LA FUNCIÓN
 
+    - EXPRESION FUNCTION
+    - SELF INVOKING FUNCTION
 
+    FUNCIÓN COMO OBJETO
+
+    - ARROW FUNCTION
+
+    PARÁMETROS Y ARGUMENTOS
+    PASO POR VALOR
+    PASO POR REFERENCIA
 */
 
     /* *HOSTING: este concepto hace referencia a que la función puede estar descrita en cualquier parte del archivo,
@@ -95,6 +106,6 @@ FUNCIONES O MÉTODOS
             }
 
             cambiarValorObjeto( persona );
-            console.log( persona );
+            console.log( persona ); // no se porqué no lo imprime aquí)
 
             //aquí se crea un objeto en la memoria y se cambia desde ahí
