@@ -13,7 +13,7 @@ CLASES
 CLASES:
 Una clase es una plantilla para los OBJETOS que tiene NOMBRE, ATRIBUTOS y MÉTODOS (attributes operations).
 Los OBJETOS son considerados INSTANCIAS de una clase
-(EJ: Persona(clase) = contiene las siguiente s instancias: Carla(objeto), Nicolás(objeto)...) 
+(EJ: Persona(clase) = contiene las siguientes instancias: Carla(objeto), Nicolás(objeto)...) 
 */
 
 class Persona{
