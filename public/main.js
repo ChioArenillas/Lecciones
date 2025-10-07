@@ -1,6 +1,6 @@
 //console.log("hello world");
 
-/* 
+
 const text = "hello world";
 const vowels = "aeiou";
 let counter = 0;
@@ -13,7 +13,7 @@ for (let i=0; i<text.length; i++){
 
 
 document.getElementById("root").innerHTML = "Number of vowels is ${counter}";
-*/
+
 
 /*
 let text = "Hi, I am learning Javascript";
