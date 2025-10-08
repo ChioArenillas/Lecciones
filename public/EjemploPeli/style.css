@@ -3,7 +3,7 @@ body{
     font-family: 'helvetica', sans;
     font-size: 13px;
     color: #c0c0c0;
-    background-color: #070c12;
+    background-color: #26282b;
 }
 
 .movie-container{
@@ -20,7 +20,7 @@ body{
     flex-direction: column;
 }
 .poster{
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 .title{
@@ -43,7 +43,7 @@ body{
 .other{
     line-height: 1.4;
     padding: 5px 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #ffffff;
 }
 .other:last-child{
     border: none; /* quita el borde de abajo del último (category) */
@@ -52,7 +52,7 @@ body{
     font-weight: bold;
     padding-right: 5px;
 }
-.movie-data-hide{
+#movie-data-hide{
     margin-bottom: 10px;
     width: 100%;
     text-align: right;

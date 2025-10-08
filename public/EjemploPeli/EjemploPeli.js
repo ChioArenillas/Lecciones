@@ -19,6 +19,7 @@ const movie = {
     const element = document.createElement("img"); //<img
     element.setAttribute("src", poster); // añade src="url"
     element.setAttribute("class", "movie-poster"); //añade class="movie-poster"
+    element.className = "poster";    
     return element;
   }
 
@@ -55,11 +56,14 @@ const movie = {
     element.className = "other";
 
     const directorEl = document.createElement("div");
-    directorEl.innerHTML = `<b>Director:</b> ${director}`;
+    directorEl.innerHTML = `<span>Director:</span> ${director}`;
+    directorEl.className = "other";
     const actorsEl = document.createElement("div");
-    actorsEl.innerHTML = `<b>Actors:</b> ${actors}`;
+    actorsEl.innerHTML = `<span>Actors: </span> ${actors}`;
+    actorsEl.className = "other";
     const categoryEl = document.createElement("div");
-    categoryEl.innerHTML = `<b>Category:</b> ${category}`;
+    categoryEl.innerHTML = `<span>Category:</span> ${category}`;
+    categoryEl.className = "other";
 
     element.appendChild(directorEl);
     element.appendChild(actorsEl);
@@ -74,14 +78,27 @@ el texto “Ocultar descripción” y “Mostrar descripción” y que escuche e
 debe mostrar/ocultar la descripción de la película. */
   function createFakeButton(){
     const element = document.createElement("div");
-    element.className = "movie-data-hide";
+    element.id = "movie-data-hide";
     element.textContent = 'Hide data';
     element.addEventListener('click', hideData);
     return element
   }
   function hideData(){
     const movieDataContainer = document.querySelector("#movie-data-container");
+    const movieFakeButton = document.querySelector("#movie-data-hide");
+
     movieDataContainer.toggleAttribute('hidden'); //toggleAttribute es para que si pulsas una vez lo pone, si pulsas otra lo quita
+    
+    const isHidden = movieDataContainer.hasAttribute('hidden');
+    movieFakeButton.textContent = isHidden ? 'Show data' : 'Hide data';
+
+    /*
+    ESTO ES LO MISMO QUE LO DE ARRIBA PERO DE OTRA FORMA:
+    if(movieDataContainer.hasAttribute('hidden')){ 
+      movieFakeButton.textContent = 'Show data';
+    } else{
+      movieFakeButton.textContent = 'Hidde data';
+    } */
   }
 
   function createMovieElement(movieObj){
