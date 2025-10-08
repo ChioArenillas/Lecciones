@@ -1,5 +1,5 @@
 
- /* ME HE QUEDADO EN EL MINUTO 1:15 DE SESIÓN 26 */
+ /* ME HE QUEDADO EN EL MINUTO  DE SESIÓN 26 */
 
 
 const movie = {
