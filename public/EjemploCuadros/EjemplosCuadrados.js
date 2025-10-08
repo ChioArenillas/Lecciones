@@ -12,29 +12,6 @@ de dicho elemento asignándole una cadena de texto con el nombre de las clases.
 */
 
 
-/* CSS:
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: 100vh;
-}
-.box {
-  width: 50px;
-  height: 50px;
-}
-.blue{
-    background-color: #0000ff;
-}
-.green{
-    background-color: #00ff00;
-}
-.red{
-    background-color: #ff0000;
-} */
-
 //JS:
 
 function addBoxes(numBoxes){
