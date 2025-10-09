@@ -1,6 +1,7 @@
 //console.log("hello world");
 
 /* 
+EJERCICIO: cuenta la cantidad de vocales del siguiente texto
 const text = "hello world";
 const vowels = "aeiou";
 let counter = 0;
@@ -16,6 +17,8 @@ document.getElementById("root").innerHTML = "Number of vowels is ${counter}";
  */
 
 /*
+EJERCICIO: Elimina las vocales de la siguiente frase
+
 let text = "Hi, I am learning Javascript";
 const vowels = "aeiouAEIOU";
 
@@ -62,7 +65,7 @@ document.getElementById("root").innerHTML = isPalindrome(text);
 */
 
 /* 
-EEjercicio. Escribe una o varias funciones que generen un array de 10 números aleatorios entre 0 y 100, encontrar
+EJERCICIO. Escribe una o varias funciones que generen un array de 10 números aleatorios entre 0 y 100, encontrar
 el número más bajo y el más alto. Finalmente el resultado con estos números deben mostrarse en la consola.
 Recuerda utilizar los principios para escribir código limpio. 
 
@@ -105,7 +108,9 @@ console.log(findMinMaxInArray(randArr));
 
 */
 
-/* const text = "Dabale arroz a la zorra el abad";
+/* EJERCICIO: comprobar si es un palíndrome
+
+const text = "Dabale arroz a la zorra el abad";
 
 function isPalindrome(text){
     text = text.replaceAll(" ","");
@@ -116,7 +121,7 @@ function isPalindrome(text){
 } */
 
  
-/* Ejercicio. Escribe una o varias funciones para que, dado un String, devuelva un array que contenga 
+/* EJERCICIO. Escribe una o varias funciones para que, dado un String, devuelva un array que contenga 
 la posición que ocupa cada carácter en el abecedario. Elimina los espacios y tildes.Ejercicio 
 
 let text = "Dábale arroz a la zorra el abad";
@@ -149,4 +154,6 @@ let arr2 = arr1;
 arr2 = [4,5,6];
 console.log(arr1,arr2);
  */
+
+
 

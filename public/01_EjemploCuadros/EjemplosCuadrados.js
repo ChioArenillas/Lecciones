@@ -14,23 +14,41 @@ de dicho elemento asignándole una cadena de texto con el nombre de las clases.
 
 //JS:
 
+console.clear();
+
+
+//Añade un elemento div con nombre de class=container
 function addBoxes(numBoxes){
   let container = document.createElement('div');
   container.className = "container"
   
+  //por cada numero de caja que exista vete creando un div llamado box
   for (let i = 0; i < numBoxes; i++){
     const box = document.createElement('div');
     box.className = 'box';
+
     
+    //si no tiene residuo lo pones de clase blue, si el residuo es 1 clase green y si no es ninguna red.
     if(i % 3 === 0){
-      box.className += ' blue';
+      box.className += ' blue'; //Al añadir una clase hay que dejar un espacio antes
     } else if (i % 3 === 1){
       box.className += ' green';
     } else {
       box.className += ' red';
     }
-    container.appendChild(box);
+    container.appendChild(box); //mete las box dentro del container
   }
-  document.body.appendChild(container);
+  
+  container.addEventListener("click", clicked); //Añade una escucha en el container para comprobar si se ha hecho click. Lo ponemos al container para que no haya una escucha en cada caja, lo que podría hacer que haya demasiado trabajo para el servidor.
+  document.body.appendChild(container); //mete el container en el body
 }
 addBoxes(8);
+
+//ADDEVENTLISTENER
+//Al hacer click la caja cambia a rojo
+function clicked(event){
+  if (event.type === "click" && this !== event.srcElement){
+    event.srcElement.className += " red";
+  }
+}
+    

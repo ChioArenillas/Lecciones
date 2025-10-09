@@ -1,5 +1,8 @@
 
- /* ME HE QUEDADO EN EL MINUTO  DE SESIÓN 26 */
+/* porque a veces coge ID y otras class
+porque en uno hace setatribute para la class */
+
+console.clear(); //Esto hace que si tienes alguna función que está en bucle el ordenador solo lo marca una vez si hay error
 
 
 const movie = {
@@ -55,19 +58,19 @@ const movie = {
     const element = document.createElement("div");
     element.className = "other";
 
-    const directorEl = document.createElement("div");
-    directorEl.innerHTML = `<span>Director:</span> ${director}`;
-    directorEl.className = "other";
-    const actorsEl = document.createElement("div");
-    actorsEl.innerHTML = `<span>Actors: </span> ${actors}`;
-    actorsEl.className = "other";
-    const categoryEl = document.createElement("div");
-    categoryEl.innerHTML = `<span>Category:</span> ${category}`;
-    categoryEl.className = "other";
+    const directorElement = document.createElement("div");
+    directorElement.textContent = `<span>Director:</span> ${director}`;
+    directorElement.className = "other";
+    const actorsElement = document.createElement("div");
+    actorsElement.textContent = `<span>Actors: </span> ${actors}`;
+    actorsElement.className = "other";
+    const categoryElement = document.createElement("div");
+    categoryElement.textContent = `<span>Category:</span> ${category}`;
+    categoryElement.className = "other";
 
-    element.appendChild(directorEl);
-    element.appendChild(actorsEl);
-    element.appendChild(categoryEl);
+    element.appendChild(directorElement);
+    element.appendChild(actorsElement);
+    element.appendChild(categoryElement);
 
     return element;
 }
@@ -104,19 +107,19 @@ debe mostrar/ocultar la descripción de la película. */
   function createMovieElement(movieObj){
     //Crear un <div class="movie"> 
     const movieElement = document.createElement('div');
-    movieElement.className = 'movie';
-    //Añade cada una a movie
-    movieElement.appendChild(createPosterElement(movieObj.poster));
-    movieElement.appendChild(createFakeButton());
+      movieElement.className = 'movie';
+      //Añade cada una a movie
+      movieElement.appendChild(createPosterElement(movieObj.poster));
+      movieElement.appendChild(createFakeButton());
 
     const movieDataContainer = document.createElement("div");
-    movieDataContainer.id = 'movie-data-container'
-    movieDataContainer.appendChild(createTitleElement(movieObj.title));
-    movieDataContainer.appendChild(createDataElement(movieObj.rating, movieObj.year)); //Al haber dos hay que añadir los dos
-    movieDataContainer.appendChild(createHeadingElement(movieObj.heading));
-    movieDataContainer.appendChild(createDescriptionElement(movieObj.description));
-    movieDataContainer.appendChild(createOtherElement(movieObj.director, movieObj.actors, movieObj.category));
-    movieElement.appendChild(movieDataContainer);
+      movieDataContainer.id = 'movie-data-container'
+      movieDataContainer.appendChild(createTitleElement(movieObj.title));
+      movieDataContainer.appendChild(createDataElement(movieObj.rating, movieObj.year)); //Al haber dos hay que añadir los dos
+      movieDataContainer.appendChild(createHeadingElement(movieObj.heading));
+      movieDataContainer.appendChild(createDescriptionElement(movieObj.description));
+      movieDataContainer.appendChild(createOtherElement(movieObj.director, movieObj.actors, movieObj.category));
+      movieElement.appendChild(movieDataContainer);
 
     //devuelve movie
     return movieElement;
