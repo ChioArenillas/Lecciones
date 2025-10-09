@@ -1,6 +1,6 @@
 console.clear();
 
-/* EJERCICIO.  SESION 26
+/* EJERCICIO.  SESIÓN 26
 Crea un elemento de formulario input de tipo texto y escucha todos
 los elementos de pulsación de tecla sólo cuando dicho elemento esté en foco. 
 
@@ -11,7 +11,7 @@ pulsación de teclas y borrar el contenido del div. */
 
 
 
-/* EJERCICIO  SESION 26
+/* EJERCICIO  SESIÓN 26
 Crea un elemento de formulario select con Javascript y añadelo al DOM. Dicho
 elemento select debe mostrar las categorías de las películas de la constante ‘movies-categories’.
 
@@ -48,7 +48,7 @@ y, si hace falta, un objeto película, permita:
  */
  
 
-/* EJERCICIO *COMPLETADO
+/* EJERCICIO SESIÓN 27 *COMPLETADO
 Termina de crear la clase Movie del ejemplo anterior:
 ● Añadiendo alguna propiedad de clase.
 ● Todos las propiedades que hemos visto en los objetos películas.
@@ -98,3 +98,23 @@ console.log(movie1.isHigRated());
 console.log(movie1.datosRelevantes());
 console.log(movie1.isClassic());
 
+
+/* EJERCICIO SESIÓN 28
+Utiliza los métodos para generar eventos de tiempos y ejecutar codigo despues de un retraso o
+a cierto intervalo:
+● Usa setTimeout para mostrar un mensaje en pantalla con un retraso de 2 segundos.
+● Usa setInterval and clearInterval para cambiar el color de fondo de un cuadrado cada
+segundo. Elimina el evento/intervalo despues de que cambie de color 20 veces.
+● Utiliza setInterval para crear un efecto debounce de 500 ms al leer el texto de un input. */
+
+
+
+
+
+/* EJERCICIO SESIÓN 29
+Crea una promesa que, después de 1 segundo, calcule un número aleatorio y que se cumpla
+si el número es par devolviendo el número y que sea rechazada si el número es impar.
+Utiliza la promesa (then/catch/finally) para mostrar un log en consola si se cumple con el
+número y un error en consola si es rechazada.
+Prueba ahora a utilizar tu nueva promesa con una función async/await.
+*/
