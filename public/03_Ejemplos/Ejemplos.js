@@ -5,7 +5,7 @@ Crea un elemento de formulario input de tipo texto y escucha todos
 los elementos de pulsación de tecla sólo cuando dicho elemento esté en foco. 
 
 Cuando se escriba texto en dicho elemento se deberá actualizar el contenido 
-de otroelemento tipo div (inicialmente sin contenido)con el contenido del input. 
+de otro elemento tipo div (inicialmente sin contenido)con el contenido del input. 
 Al perder el foco el input se debe dejar de escuchar los eventos de 
 pulsación de teclas y borrar el contenido del div. */
 
@@ -57,7 +57,7 @@ Termina de crear la clase Movie del ejemplo anterior:
     ○ determinar si una película es un clásico (anterior a 1980).
     ○ devolver una cadena con los datos más relevantes (título, año y categoría). */
 
-
+/* 
 class Movie { //añades las variables de la clase
     title;
     director;
@@ -97,19 +97,41 @@ console.log(movie2.director);
 console.log(movie1.isHigRated());
 console.log(movie1.datosRelevantes());
 console.log(movie1.isClassic());
-
+ */
 
 /* EJERCICIO SESIÓN 28
 Utiliza los métodos para generar eventos de tiempos y ejecutar codigo despues de un retraso o
 a cierto intervalo:
 ● Usa setTimeout para mostrar un mensaje en pantalla con un retraso de 2 segundos.
-● Usa setInterval and clearInterval para cambiar el color de fondo de un cuadrado cada
-segundo. Elimina el evento/intervalo despues de que cambie de color 20 veces.
 ● Utiliza setInterval para crear un efecto debounce de 500 ms al leer el texto de un input. */
 
+/* Usa setInterval and clearInterval para cambiar el color de fondo de un cuadrado cada
+segundo. Elimina el evento/intervalo despues de que cambie de color 20 veces. (faltaría que pare a los 20veces):
+ */
 
+/* 
+const elem = document.querySelector('.box');
+let count = 0;
 
+function changeColor(){
+    const colorNum = count % 3;
 
+    switch (colorNum){
+        case 0: 
+        elem.className = "box red"; 
+        break;
+        case 1: 
+        elem.className = "box blue"; 
+        break;
+        case 2: 
+        elem.className = "box green"; 
+        break;
+    }
+    count++;
+}
+setInterval(changeColor, 2000);
+
+ */
 
 /* EJERCICIO SESIÓN 29
 Crea una promesa que, después de 1 segundo, calcule un número aleatorio y que se cumpla
