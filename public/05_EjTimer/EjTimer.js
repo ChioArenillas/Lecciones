@@ -1,3 +1,4 @@
+console.clear();
 
 /* EJERCICIO SESIÓN 28
 Utiliza los métodos para generar eventos de tiempos y ejecutar codigo despues de un retraso o

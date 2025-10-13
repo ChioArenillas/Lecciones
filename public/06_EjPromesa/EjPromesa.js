@@ -1,3 +1,4 @@
+console.clear();
 
 
 /* SESIÓN 29 CREAR PROMESA */
@@ -22,10 +23,16 @@ const button = document.querySelector('button');
 button.addEventListener('click', onClickStart);
 
 async function onClickStart(){
+ try{
     console.clear();
     const result = await randomNums();
     console.log(result);
+    } catch (error){
+    console.error(error);
+    } finally {
+    console.info('Done');
     }
+ }
 */
 
 
@@ -60,3 +67,22 @@ Utiliza la promesa (then/catch/finally) para mostrar un log en consola si se cum
 número y un error en consola si es rechazada.
 Prueba ahora a utilizar tu nueva promesa con una función async/await.
 */
+
+
+function randomNums(){
+    return new Promise((resolve, reject) => { 
+
+        const id = setInterval(() => {
+            const rand = Math.floor(Math.random() * 100);
+            console.log(rand); 
+
+            if (rand % 2 == 0) {
+                resolve('Num ${rand} is even');
+                clearInterval(id); 
+            } else if (rand % 2 != 0){
+                reject ('Number ${rand} is odd'); 
+                clearInterval(id);
+            }
+        }, 1000); 
+    });
+}

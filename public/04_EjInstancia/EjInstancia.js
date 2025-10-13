@@ -1,3 +1,5 @@
+console.clear();
+
 
 /* EJERCICIO  SEISÓN 27
 Escribe una función closure que encierre:
