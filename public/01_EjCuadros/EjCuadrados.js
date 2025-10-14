@@ -11,6 +11,10 @@ Nota: para definir las clases CSS que va a tener un elemento en Javascript usa l
 de dicho elemento asignándole una cadena de texto con el nombre de las clases. 
 */
 
+/* 
+HTML
+<div>box</div>
+ */
 
 //JS:
 

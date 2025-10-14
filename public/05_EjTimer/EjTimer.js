@@ -10,6 +10,11 @@ a cierto intervalo:
 segundo. Elimina el evento/intervalo despues de que cambie de color 20 veces. (faltaría que pare a los 20veces):
  */
 
+/* 
+HTML
+  <div class="box"></div>
+    <button class="button">start</button>
+*/
 
 const elem = document.querySelector('.box');
 let count = 0;
