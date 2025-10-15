@@ -3,6 +3,7 @@
 porque en uno hace setatribute para la class */
 
 console.clear(); //Esto hace que si tienes alguna función que está en bucle el ordenador solo lo marca una vez si hay error
+//import { movie } from "../dataFilms";
 
 
 const movie = {
@@ -16,7 +17,7 @@ const movie = {
     description:
       "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
   };
-
+ 
   function createPosterElement(poster){
     //Crear
     const element = document.createElement("img"); //<img
