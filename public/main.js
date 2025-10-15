@@ -122,7 +122,7 @@ function isPalindrome(text){
 
  
 /* EJERCICIO. Escribe una o varias funciones para que, dado un String, devuelva un array que contenga 
-la posición que ocupa cada carácter en el abecedario. Elimina los espacios y tildes.Ejercicio 
+la posición que ocupa cada carácter en el abecedario. Elimina los espacios y tildes. 
 
 let text = "Dábale arroz a la zorra el abad";
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
