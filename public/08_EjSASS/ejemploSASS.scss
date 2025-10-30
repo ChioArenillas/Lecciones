@@ -1,0 +1,43 @@
+body { 
+    margin: 50px;
+}
+
+$colors: (
+    success: #419197,
+    info: #3085c3,
+    warning: #e9b824,
+    error: #c70039
+);
+
+$deafault-space: 10px;
+
+@mixin alerts {
+    @each $name, $color in $colors {
+        .alert-#{$name} {
+            width: 150px;
+            margin: $deafault-space;
+            padding: $deafault-space;
+            border-radius: 4px;
+            background-color: lighten($color, 35%);
+            border: 2px solid $color;
+
+            @if $name == "warning" { //cambio de color de las letras de warning
+                color: darken($color, 25%);
+            } else {
+                color: $color;
+            }
+        }
+    }
+}
+
+@include alerts;
+
+@mixin flexbox($direction: row, $jcontent: start, $aitems: start) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jcontent;
+    align-items: $aitems;
+}
+.alerts {
+    @include flexbox($direction: column, $aitems: center);
+}
